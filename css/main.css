@@ -11,7 +11,44 @@ html {
   }
 
 body {
-    margin: 25%;
+    padding: 5%;
     font-family: var(--font-serif);
     font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: orangered;
+
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.component img {
+    max-width: intial;
+}
+
+.component__img {
+    border: 1px solid red;
+    overflow-x: auto;
+}
+
+h3, h4 {
+    font-family: var(--font-sans-serif);font-weight: 400;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    color: white;
+    background-color: orangered;
+    padding: 5px;
 }
