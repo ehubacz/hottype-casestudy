@@ -1,0 +1,17 @@
+:root {
+    --font-sans-serif: Apparat, sans-serif;
+    --font-serif: Cormorant, serif;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 25%;
+    font-family: var(--font-serif);
+    font-size: 35px;
+}
