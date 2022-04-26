@@ -1,6 +1,6 @@
 :root {
     --font-sans-serif: Apparat, sans-serif;
-    --font-serif: Cormorant, serif;
+    --font-serif: Cormorant, serif
 }
 
 html {
@@ -51,4 +51,34 @@ h4 {
     color: white;
     background-color: orangered;
     padding: 5px;
+}
+
+.menu--button {
+    background-color: red;
+}
+
+.page-header__code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--font-sans-serif);
+}
+
+.page-header__code ul {
+    display:flex;
+    
+}
+
+.page-header__code li {
+    list-style-type: none;
+    padding: 3%;
+    font-size: 5vh;
+    margin-right: 3%;
+    max-width: fit-content;
+    
+}
+
+.mini-nav__code {
+    background-color: orangered;
+    font-family:var(--font-sans-serif);
 }
