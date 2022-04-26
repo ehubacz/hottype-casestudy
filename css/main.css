@@ -25,26 +25,20 @@ a:hover {
     color: orangered;
 
 }
+
 img{
     max-width: 100%;
     display: block;
 }
 
 .component img {
-    max-width: intial;
-}
-
-.component__img {
+    max-width: intial;   
     border: 1px solid red;
     overflow-x: auto;
 }
 
 h3, h4 {
     font-family: var(--font-sans-serif);font-weight: 400;
-}
-
-h3 {
-    font-size: 30px;
 }
 
 h4 {
@@ -72,13 +66,102 @@ h4 {
 .page-header__code li {
     list-style-type: none;
     padding: 3%;
-    font-size: 5vh;
+    font-size: 3vw;
     margin-right: 3%;
     max-width: fit-content;
     
 }
 
 .mini-nav__code {
-    background-color: orangered;
+    background-color: rgb(253, 54, 4);
     font-family:var(--font-sans-serif);
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.mini-nav__code a {
+    color: white;
+}
+
+.mini-nav__code a:hover {
+    color:rgb(129, 70, 55);
+}
+
+.mini-nav__code ul {
+    display:flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    padding: 2%;
+}
+.mini-nav__code li {
+    color: white;
+    list-style-type: none;
+    font-size: 58px;
+}
+
+.mini-nav--icon {
+    grid-row-start: 3;
+    grid-column-start: 3;
+    margin-top: 35%;
+
+}
+
+.mini-nav--account {
+    grid-row-start: 3;
+    padding: 2%;
+}
+
+.projects img {
+    display: inline-block;
+}
+
+.cover-section__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.cover-section--code p {
+    
+}
+/*
+.cover-section__hotsans--code p {
+    font-family: var(--font-sans-serif);
+    kerning: 3vw;
+    text-align: center;
+    font-size: 12vw;
+    font-style: oblique;
+    font-weight: 800;
+    margin: 5vw 15vw 5vw 15vw;
+    padding: 0;
+}
+
+.cover-section__hotsans--code a:hover p{
+   color: black;
+} 
+
+.cover-section__punta--code p {
+    font-family: var(--font-serif);
+    font-weight: bold 700;
+    text-align: center;
+    font-size: 12vw;
+    font-weight: 800;
+    margin: 5vw 15vw 5vw 15vw;
+    padding: 0;
+}
+
+.cover-section__stroy-grotesk--code {
+    font-family: var(--font-sans-serif);
+    font-weight: 700;
+    font-style: oblique;
+    text-align: center;
+    font-size: 12vw;
+    font-weight: 800;
+    margin: 5vw 15vw 5vw 15vw;
+    padding: 0;
 }
