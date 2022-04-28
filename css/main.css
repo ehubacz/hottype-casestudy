@@ -157,8 +157,9 @@ h4 {
     font-style: italic;
 }
 
-.projects img {
-    display: inline-block;
+.component__img {
+    display: flex;
+    overflow-x: auto;
 }
 /*
 .cover-section__hotsans--code p {
