@@ -187,7 +187,6 @@ Fonts Section
     font-family: var(--font-sans-serif);
     font-weight: 600;
     font-style: oblique;
-    line-height: 50px;
 }
 
 .fontdisplay__stroymono {
