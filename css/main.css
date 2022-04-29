@@ -3,6 +3,10 @@
     --font-serif: Cormorant, serif
 }
 
+/*
+typographic defaults
+*/
+
 html {
     box-sizing: border-box;
   }
@@ -45,6 +49,10 @@ h4 {
     color: black;
     padding: 5px;
 }
+
+/*
+Header/Menu Info
+*/
 
 .menu--button {
     background-color: red;
@@ -112,7 +120,9 @@ h4 {
     grid-row-start: 3;
     padding: 2%;
 }
-
+/*
+Fonts Section
+*/
 
 .fonts a:hover p{
    color: black;
@@ -157,39 +167,65 @@ h4 {
     font-style: italic;
 }
 
+/*
+Projects Section
+*/
+
 .component__img {
     display: flex;
     overflow-x: auto;
 }
+
+.projects h4 {
+    color: white;
+    padding-left: 10%;
+    display: inline-block;
+}
+
+.projects a:hover {
+    background:rgb(253, 54, 4);
+}
+.project-loreal a {
+    width: 830px;
+    height: 830px;
+    background: url("../components/img/lorealimage.png") no-repeat;
+    display: inline-block;
+}
+
+.project-nike a {
+    width: 830px;
+    height: 550px;
+    background: url("../components/img/nikeimage.png")  no-repeat;
+    display: inline-block;
+}
+    
+
+.project-pekingduck a {
+    width: 830px;
+    height: 550px;
+    background: url("../components/img/pekingimage.png")  no-repeat;
+    display: inline-block;
+}
+
+.project-vizkultura a {
+    width: 830px;
+    height: 830px;
+    background: url("../components/img/vizkulturaimage.png") no-repeat;
+    display: inline-block;
+}
 /*
-.cover-section__hotsans--code p {
-    font-family: var(--font-sans-serif);
-    kerning: 3vw;
-    text-align: center;
-    font-size: 12vw;
-    font-style: oblique;
-    font-weight: 800;
-    margin: 5vw 15vw 5vw 15vw;
-    padding: 0;
+Social List
+*/
+.social-list {
+    font-size: 5vw;
 }
 
-.cover-section__punta--code p {
-    font-family: var(--font-serif);
-    font-weight: bold 700;
-    text-align: center;
-    font-size: 12vw;
-    font-weight: 800;
-    margin: 5vw 15vw 5vw 15vw;
-    padding: 0;
+.social-list h4 {
+    font-size: 4vw;
+    font-weight: 600;
+}
+.social-list li{
+    list-style-type: none;
 }
 
-.cover-section__stroy-grotesk--code {
-    font-family: var(--font-sans-serif);
-    font-weight: 700;
-    font-style: oblique;
-    text-align: center;
-    font-size: 12vw;
-    font-weight: 800;
-    margin: 5vw 15vw 5vw 15vw;
-    padding: 0;
-}
+/*
