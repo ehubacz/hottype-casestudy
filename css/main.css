@@ -15,9 +15,11 @@ html {
   }
 
 body {
-    padding: 5%;
     font-family: var(--font-serif);
     font-size: 35px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
 }
 
 a {
@@ -35,7 +37,7 @@ img{
     display: block;
 }
 
-.component img {
+.component__img {
     max-width: intial;   
     border: 1px solid red;
     overflow-x: auto;
@@ -48,6 +50,33 @@ h3, h4 {
 h4 {
     color: black;
     padding: 5px;
+}
+
+/*
+Component Menu
+*/
+.container {
+    padding: 5%;
+}
+
+.side-menu {
+    grid-column-start:1;
+    -ms-grid-row-span: 1;
+    font-size: 3vw;
+    color: white;
+    background-color: rgb(253, 54, 4);
+    padding: 0;
+    margin: 0;
+    
+}
+
+.side-menu a {
+    color: white;
+    line-height: 15px;
+}
+
+.side-menu li {
+    list-style-type: none;
 }
 
 /*
@@ -220,6 +249,10 @@ Social List
     font-size: 5vw;
 }
 
+.social-list__code {
+    display: flex;
+}
+
 .social-list h4 {
     font-size: 4vw;
     font-weight: 600;
@@ -229,3 +262,9 @@ Social List
 }
 
 /*
+Page-footer
+*/
+
+.page-footer__code {
+    display: flex;
+}
