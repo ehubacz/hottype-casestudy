@@ -18,21 +18,21 @@
     <div class="side-menu">
         <h1>Web Components</h1>
             <ul>
-                <li><a href="#">Defaults</a></li>
-                <li><a href="#">Atoms</a></li>
-                <li><a href="#">Page Header/Main Nav</a></li>
-                <li><a href="#">Cover Sections</a></li>
-                <li><a href="#">Fonts</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Social-list</a></li>
-                <li><a href="#">Page Footer</a></li>
+                <li><a href="#typography">Defaults</a></li>
+                <li><a href="#atoms">Atoms</a></li>
+                <li><a href="#header">Page Header/Main Nav</a></li>
+                <li><a href="#cover-top">Cover Sections</a></li>
+                <li><a href="#fonts">Fonts</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#socil-list">Social-list</a></li>
+                <li><a href="#footer">Page Footer</a></li>
             </ul>
     </div>
 <!--
 Typographic Defaults Begin
 -->
     <div class="container">
-    <h2>Typography Defaults</h2>
+    <h2 id="typography">Typographic Defaults</h2>
         <article class="body">
             <h3 class="body__heading">Body</h3>
 
@@ -64,7 +64,7 @@ Typographic Defaults Begin
 <!--
     Atoms Begins
 -->
-    <h2>Atoms</h2>
+    <h2 id="atoms">Atoms</h2>
 <!--
     Nav-toggle
 -->
@@ -112,7 +112,7 @@ Typographic Defaults Begin
 <!--
     Page Header Begins
 -->
-    <h2>Page Header/Main Nav</h2>
+    <h2 id="header">Page Header/Main Nav</h2>
         <article class="page-header">
             <h3 class="page-header__heading">page-header</h3>
             
@@ -158,12 +158,12 @@ Typographic Defaults Begin
     Cover Section Begins
 -->
 
-    <h2>Cover Sections</h2>
+    <h2 id="cover-top">Cover Sections</h2>
 <!--
     Fonts
 -->
         <div class="fonts">
-        <h4>Fonts</h4>
+        <h4 id="fonts">Fonts</h4>
 <!--
     Hot Sans
 -->
@@ -273,7 +273,7 @@ Typographic Defaults Begin
     Projects
 -->
         
-        <h4>Projects</h4>
+        <h4 id="projects">Projects</h4>
         <div class="projects">
 
         <article class="project-loreal">
@@ -347,23 +347,63 @@ Typographic Defaults Begin
 <!--
     Hottest Work Grid
 -->
-        <article class="hottest-work_block">
-            <h3 class="component__name">Hottest Work</h3>
-            
-            <div class="hottest-work__img">
+        <article class="hottest-work">
+    
+            <div class="component__img">
+                <h3 class="hottest-work__name">Hottest Work</h3>
                 <img src="img/hottest-work_block.png">
             </div>
             
-            <div class="component__code">
+            <div class="hottest-work__code">
+                <div class="projects">
+
+                    <article class="grid_project-loreal">
+     
+                        <div class="project-loreal__code">
+                        <a href="#">
+                            <h4>L'Oreal</h4>
+                        </a>
+                        </div>
             
+                    </article>
+            
+                    <article class="grid_project-nike">
+
+                        <div class="project-nike__code">
+                            <a href="#">
+                                <h4>Nike Air</h4>
+                            </a>
+                        </div>
+            
+                    </article>
+            
+                    <article class="grid_project-pekingduck">                  
+                        <div class="pekingduck__code">
+                            <a href="#">
+                                <h4> Peking Duck</h4>
+                            </a>
+                        </div>
+            
+                    </article>
+            
+                    <article class="grid_project-vizkultura">
+    
+                        <div class="project-vizkulturas__code">
+                            <a href="#">
+                                <h4>Vizkultura Magazine</h4>
+                            </a>
+                        </div>
+            
+                    </article>
+                    </div>
             </div>
         </article>
-        </div>
+        
 
 <!--
     Page Footer Begins
 -->
-    <h2>Page Footer</h2>  
+    <h2 id="social-list">Page Footer</h2>  
 
         <article class="social-list">
 
@@ -394,7 +434,7 @@ Typographic Defaults Begin
 
         <article class="page-footer">
 
-            <h3 class="page-footer__heading">page-footer</h3>
+            <h3 id="footer" class="page-footer__heading">page-footer</h3>
             
             <div class="component__img">
                 <img src="img/fullfooter.png">
@@ -403,12 +443,12 @@ Typographic Defaults Begin
             <div class="page-footer__code">
                 
                 <div class="page-footer__base">
-                <p><a href="#">Back to top ↑</a></p>
+                <p><a href="#top">Back to top ↑</a></p>
                 <p>Crafted by Fran, Zoran & FoundryCore</p>
                 <p>2022 HotType <a href="#">Support</a></p>
                 </div>
             </div>
-
+</div>
         </article>
     </div>
 </body>

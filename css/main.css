@@ -2,6 +2,41 @@
     --font-sans-serif: Apparat, sans-serif;
     --font-serif: Cormorant, serif
 }
+/*
+Component Menu
+*/
+.container {
+    padding: 5%;
+}
+
+.component__img {
+    max-width: intial;   
+    border: 1px solid red;
+    overflow-x: auto;
+}
+
+.side-menu {
+    grid-column-start:1;
+    -ms-grid-row-span: 1;
+    font-size: 3vw;
+    color: white;
+    background-color: rgb(253, 54, 4);
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    top: 20px;
+    
+}
+
+.side-menu a {
+    color: white;
+    line-height: 15px;
+    font-size: 15px;
+}
+
+.side-menu li {
+    list-style-type: none;
+}
 
 /*
 typographic defaults
@@ -37,10 +72,10 @@ img{
     display: block;
 }
 
-.component__img {
-    max-width: intial;   
-    border: 1px solid red;
-    overflow-x: auto;
+
+h1 {
+    font-size: 30px;
+    padding-left: 7px;
 }
 
 h3, h4 {
@@ -52,32 +87,7 @@ h4 {
     padding: 5px;
 }
 
-/*
-Component Menu
-*/
-.container {
-    padding: 5%;
-}
 
-.side-menu {
-    grid-column-start:1;
-    -ms-grid-row-span: 1;
-    font-size: 3vw;
-    color: white;
-    background-color: rgb(253, 54, 4);
-    padding: 0;
-    margin: 0;
-    
-}
-
-.side-menu a {
-    color: white;
-    line-height: 15px;
-}
-
-.side-menu li {
-    list-style-type: none;
-}
 
 /*
 Header/Menu Info
@@ -236,6 +246,74 @@ Projects Section
 }
 
 .project-vizkultura a {
+    width: 830px;
+    height: 830px;
+    background: url("../components/img/vizkulturaimage.png") no-repeat;
+    display: inline-block;
+}
+
+/*
+Hottest Work
+*/
+.hottest-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.hottest-work img {
+    grid-row: 1;
+    grid-column: span 2;
+    display: block;
+}
+
+.grid_project-loreal {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.grid_project-nike {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.grid_project-pekingduck {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.grid_project-vizkultura {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.hottest-work a:hover {
+    background:rgb(253, 54, 4);
+}
+.grid_project-loreal a {
+    width: 830px;
+    height: 830px;
+    background: url("../components/img/lorealimage.png") no-repeat;
+    display: inline-block;
+}
+
+.grid_project-nike a {
+    width: 830px;
+    height: 550px;
+    background: url("../components/img/nikeimage.png")  no-repeat;
+    display: inline-block;
+}
+    
+
+.grid_project-pekingduck a {
+    width: 830px;
+    height: 550px;
+    background: url("../components/img/pekingimage.png")  no-repeat;
+    display: inline-block;
+}
+
+.grid_project-vizkultura a {
     width: 830px;
     height: 830px;
     background: url("../components/img/vizkulturaimage.png") no-repeat;
