@@ -308,6 +308,13 @@ Hottest Work
 .hottest-work a:hover {
     background:rgb(253, 54, 4);
 }
+
+.cover-section__code {
+    display: grid;
+    grid-template-columns: minmax(20vw, 1fr);
+    grid-template-rows: minmax(20vw, 1fr);
+}
+
 .grid_project-loreal a {
     width: 830px;
     height: 830px;
