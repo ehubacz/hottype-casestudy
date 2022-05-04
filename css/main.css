@@ -12,10 +12,6 @@ html {
 body {
     font-family: var(--font-serif);
     font-size: 4vw;
-    display: grid;
-    grid-template-columns: 25vw 1fr;
-    grid-template-rows: 1fr;
-    overflow: wrap;
     max-width: 100vw;
 }
 /*
@@ -294,15 +290,13 @@ Hottest Work
 
 .hottest-work {
     display: grid;
-    grid-template-columns: min-max(20vw, auto);
-    grid-template-rows:  min-max(20vw, auto);
+    grid-template-columns: repeat(autofit, min-max(auto, 20vw));
+    grid-template-rows:  repeat(autofit, min-max(auto, 20vw));
     
 }
 
-.hottest-work img {
-    grid-row: 1;
-    grid-column: span 2;
-    display: block;
+.hottest-work a{
+    display: inline-block;
 }
 
 .hottest-work a:hover {
@@ -343,6 +337,7 @@ Hottest Work
     background: url("../components/img/vizkulturaimage.png") no-repeat;
     display: inline-block;
 }
+
 /*
 Social List
 */
@@ -375,7 +370,7 @@ Social List
     padding: 0;
 }
 
-.social-list li{
+.contact li{
     list-style-type: none;
 }
 
